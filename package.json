@@ -1,0 +1,14 @@
+{
+  "name": "react-tabs",
+  "version": "1.0.0",
+  "description": "React tabs",
+  "main": "index.html",
+  "scripts": {
+    "go": "node server.js"
+  },
+  "author": "Andrey Kovalev",
+  "license": "",
+  "devDependencies": {
+    "express": "^4.15.3"
+  }
+}
