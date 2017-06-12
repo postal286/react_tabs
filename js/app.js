@@ -14,18 +14,9 @@ var dataTabs = [
 		text: 'Some third text',
 		tabId: '2'
 	}
-];
+] || [];
 
 var Tab = React.createClass({
-	getInitialState: function () {
-		return ({
-			active: ''
-		});
-	},
-
-	componentDidMount: function () {
-
-	},
 
 	render: function () {
 
@@ -61,10 +52,10 @@ var Content = React.createClass({
 		var ContentTemplate;
 
 		if (data.length > 0) {
-			ContentTemplate = data.map(function(item, index) {
+			ContentTemplate = data.map(function(item) {
 				return (
-					<div key={index}>
-						<div className={'tab-content content' + index}>
+					<div key={item.tabId}>
+						<div className={'tab-content'}>
 							<h3>{item.title}</h3>
 							<p>{item.text}</p>
 						</div>
