@@ -1,6 +1,12 @@
-.tab {
+.tabs {
+  width: 940px;
+  margin: 0 auto;
+  font-family: "Arial", sans-serif
+}
+
+.tabs__tab {
   list-style-type: none;
-  margin: 0;
+  margin: 100px auto 10px auto;
   padding: 0;
   display: flex;
   overflow: hidden;
@@ -8,27 +14,37 @@
   background-color: #f1f1f1;
 }
 
-.tab li {
+.tabs__tab li {
 	display: inline-flex;
 }
 
-.tab li a {
-  font-family: "Arial", sans-serif;
-
+.tabs__tab li a {
   color: black;
+  font-size: 18px;
   text-align: center;
   padding: 14px 16px;
-  text-decoration: none;
+  cursor: pointer;
   transition: 0.3s;
-  font-size: 17px;
+  text-decoration: none;
+  font-family: "Arial", sans-serif;
 }
 
-ul.tab li a:focus, .active {
-    background-color: #ccc;
+.tabs__tab__li_active {
+  background-color: #ccc;
+}
+
+.tabs__tab__li:hover {
+  background-color: #ddd;
 }
 
 .tab-content {
-  padding: 6px 12px;
-  -webkit-animation: fadeEffect 1s;
-  animation: fadeEffect 1s;
+  padding: 10px 15px;
+}
+
+.city-description {
+  line-height: 25px;
+}
+
+.city-title {
+  font-size: 24px;
 }
